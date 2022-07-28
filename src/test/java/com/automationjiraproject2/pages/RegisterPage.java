@@ -18,5 +18,31 @@ public class RegisterPage {
     @FindBy(xpath = "//h2[.='New User Signup!']")
     public WebElement newUserSignupMessage;
 
+    @FindBy(xpath = "//input[@data-qa='signup-name']")
+    public WebElement nameBox;
+
+    @FindBy(xpath = "//input[@data-qa='signup-email']")
+    public WebElement emailAddressBox;
+
+    @FindBy(xpath = "//button[@data-qa='signup-button']")
+    public WebElement newSignupButton;
+
+    @FindBy(xpath = "//b[.='Enter Account Information']")
+    public WebElement enterAccountInformationMessage;
+
+    @FindBy(id = "id_gender1")
+    public WebElement title;
+
+    @FindBy(id = "password")
+    public WebElement passwordBox;
+
+    @FindBy(id = "days")
+    public WebElement daysDropDown;
+
+    @FindBy(id="months")
+    public WebElement monthsDropDown;
+
+    @FindBy(id="years")
+    public WebElement yearsDropDown;
 
 }

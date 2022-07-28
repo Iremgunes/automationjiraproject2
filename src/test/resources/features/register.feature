@@ -18,11 +18,17 @@ Feature: Register function
   #17. Click 'Delete Account' button
   #18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 
-Scenario: user is on the homepage
-  Given user navigate to homepage
-  Then verify that homepage is visible successfully
-  When user clicks on signup/login button
-  Then verify 'New User Signup!' is visible
+  Scenario: user is on the homepage
+    Given user navigate to homepage
+    Then verify that homepage is visible successfully
+    When user clicks on signup/login button
+    Then verify 'New User Signup!' is visible
+    When user enter name and email address
+    And user clicks on new signup button
+    Then verify that 'ENTER ACCOUNT INFORMATION' is visible
+    And fill details following information
+
+
 
 
 
